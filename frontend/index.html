@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title>Hello, Word!</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello, Word!</h1>
+
+       <div class="alert alert-primary" role="alert" id="my-box"> 
+              Um simples alerta primary. Olha só!
+     </div>
+      <button type="button" class="btn btn-success" id="btn-green">Verde</button>
+      <button type="button" class="btn btn-danger" id="btn-red">Vermelho </button>
+    </div>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+       const myBox = document.getElementById('my-box');
+       const btnGreen = document.getElementById('btn-green');
+       const btnRed = document.getElementById('btn-red');
+
+       let text='Clique no botão';
+
+       btnGreen.addEventListener('click', ()=>{
+       
+        myBox.innerText='verde';
+       })
+        btnRed.addEventListener('click', ()=>{
+
+        myBox.innerText='vermelho';
+       })
+
+       myBox.innerText='clique no botão!!!';
+
+
+
+    </script>
+  </body>
+</html>
